@@ -65,6 +65,19 @@ nav ul li a button {
     cursor: pointer;
 }
 
+nav ul .toggel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul .toggel button{
+    padding:8px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgba(207, 147, 7, 0.521);
+}
 nav ul li#See select {
     padding: 5px;
     border: 2px solid rgb(9, 241, 9);
@@ -193,9 +206,22 @@ nav ul li#See select {
     background-color: rgba(0, 0, 0, 0.237);
 }
 
+/* Responsive ness */
+
+@media (max-width : 824px){
+    .heroSection{
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 768px) {
     #formContainer {
         width: 90%;
+    }
+    #navli{
+        display: none;
+    }
+    .logo{
+        transition: 0.9s ease;
     }
 }
 .TaskContainer{

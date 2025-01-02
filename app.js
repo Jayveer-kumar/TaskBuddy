@@ -287,7 +287,7 @@ function byPriority(){
   const priorityMap={
     "High":3,
     "Medium":2,
-    "Low":1
+    "Low":1 
 };
 
 

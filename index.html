@@ -10,37 +10,36 @@
 <body>
     <head>
         <nav>
-            <ul id="navbar">
-                <h3 id="logo"> <a href="#">TaskBuddy </a></h3>
-                <li id="navli"><a href="#" id="Add">Add Task</a></li>
-                <li id="navli" id="See">
-                    <select>
-                        <option>All</option>
-                        <option>By Priority</option>
-                        <option>By Category</option>
-                        <option>By Nearest Date</option>
-                    </select>
-                </li>
-                <li id="navli" class="dropdown">
-                    <a href="#" id="Pending">
-                        <button>Pending Task</button>
-                    </a>
-                    <div class="pendingDropdown">
-                        <a href="#">Upcoming Feature</a>
-                    </div>
-                </li>
-                <li id="navli" class="dropdown">
-                    <a href="#" id="Complete">
-                        <button>Completed Task</button>
-                    </a>
-                    <div class="pendingDropdown">
-                        <a href="#">Upcoming Feature</a>
-                    </div>
-                </li>
-                <div class="toggel">
-                    <button>Menu</button>
+            <div class="navContainer">
+                <div class="logoContainer">
+                    <div class="logo">TaskBuddy</div>
                 </div>
-            </ul>
+                <div class="linkContainer">
+                    <div class="allLinks" id="allLinks">
+                        <div class="addTask">
+                            <button  id="Add" >Add</button>
+                        </div>
+                        <div class="selectTask" id="See" >
+                           <select>
+                            <option>All</option>
+                            <option>By Priority</option>
+                            <option>By Category</option>
+                            <option>By Nearest Date</option>
+                           </select>
+                        </div>
+                        <div class="pendingTask" id="Pending" >
+                            <button>Pending</button>
+                        </div>
+                        <div class="completedTask" id="Complete" >
+                            <button>Completed</button>
+                        </div>
+                    </div>
+                    <div class="showNavbar Show"></div>
+                    <div class="toggelDiv">
+                        <button id="toggelButtonContent" >More</button>
+                    </div>
+                </div>
+            </div>       
         </nav>
     </head>
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <head>
+        <nav>
+            <ul id="navbar">
+                <h3 id="logo"> <a href="#">TaskBuddy </a></h3>
+                <li id="navli"><a href="#" id="Add">Add Task</a></li>
+                <li id="navli" id="See">
+                    <select>
+                        <option>All</option>
+                        <option>By Priority</option>
+                        <option>By Category</option>
+                        <option>By Nearest Date</option>
+                    </select>
+                </li>
+                <li id="navli" class="dropdown">
+                    <a href="#" id="Pending">
+                        <button>Pending Task</button>
+                    </a>
+                    <div class="pendingDropdown">
+                        <a href="#">Upcoming Feature</a>
+                    </div>
+                </li>
+                <li id="navli" class="dropdown">
+                    <a href="#" id="Complete">
+                        <button>Completed Task</button>
+                    </a>
+                    <div class="pendingDropdown">
+                        <a href="#">Upcoming Feature</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </head>
+
+    <div class="seeContainer">
+        <form id="formContainer">
+            <h1>Welcome to TaskBuddy! Ready to add your next task?</h1>
+            <label for="TitleofTask">Enter Title</label>
+            <input type="text" id="TitleofTask" placeholder="Enter title">
+            <label for="DescriptionofTask">Enter Description</label>
+            <input type="text" id="DescriptionofTask" placeholder="Enter description">
+            <label for="startdate">Start Date</label>
+            <input type="date" id="startdate">
+            <label for="Deadline">Set Deadline</label>
+            <input type="date" id="Deadline">
+            <label for="image">Add Image</label>
+            <input type="file" id="image" accept="image/*" >
+            <label for="priority">Set Priority</label>
+            <select id="priority" >
+                <option value="High" id="High">High</option>
+                <option value="Medium" id="Medium">Medium</option>
+                <option value="Low" id="Low">Low</option>
+            </select>
+            <label for="category">Category</label>
+            <select  id="category">
+                <option>Work</option>
+                <option>Personal</option>
+                <option>Shopping</option>
+            </select>
+            <button type="submit" id="submit">Add</button>
+        </form>
+        <button id="closeBtn"><i class="fa-solid fa-xmark closeIcon"></i></button>
+    </div>
+
+    <div class="heroSection"> </div> 
+
+    <div class="TaskContainer">
+    </div>   
+      
+    <script src="app.js"></script>
+</body>
+</html>
